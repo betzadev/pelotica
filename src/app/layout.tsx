@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from '../components/Navbar';
-
+import Navbar from "../components/Navbar";
 
 export const metadata: Metadata = {
   title: "Pelotica",
@@ -19,9 +18,7 @@ export default function RootLayout({
         <div className="relative z-10">
           <Navbar />
         </div>
-        <div>
-          {children}
-        </div>
+        <div>{children}</div>
       </body>
     </html>
   );
